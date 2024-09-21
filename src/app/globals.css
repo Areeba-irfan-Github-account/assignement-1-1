@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+ 
+.head{
+  color:springgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  padding: 35px;
+  font: 800;
+  font-size: 3.3rem;
+}
+.pa{
+  color: #ededed;
+  font: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  background-color: #171717;
+  padding: 25px;
+  font-size: large;
+}
+.page1{
+  color: crimson;
+  margin: 5%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 750;
+  font-size: 3.8rem;
+}
+.pageo{
+  margin: 35px;
+  background-color: #171717;
+  padding: 25px;
+}
+
+.btn{
+  justify-content: center;
+  align-items: center;
+  background-color: #ededed;
+  padding: 15px;
+  margin: 20px;
+  color: #0a0a0a;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  height: auto;
+  width: 15%;
+  flex-direction: column;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: cente;
+  margin: 35px;
+  padding: 45px;
+  background-color: coral;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.submit:hover{
+  background-color: rgb(227, 98, 51);
+}
+.btn:hover{
+  background-color: gray;
+  padding: 18px;
+}
